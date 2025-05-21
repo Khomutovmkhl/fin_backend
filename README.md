@@ -2,6 +2,19 @@
 
 Short description or introduction to the project.
 
+Hello there, newComers. This project is modified bachelor thesis. 
+Main application is 2 years old, so do not look very precisely. 
+
+Main idea is to show one of my features I worked on: 
+Dynamic filtering via Spring Specification and Hibernate Criteria. 
+Main class is [CustomSpecification.java](src/main/java/com/example/fin/filtering/CustomSpecification.java) 
+and all the magic is around [filtering](src/main/java/com/example/fin/filtering)
+package.
+
+
+
+
+
 ## Table of Contents
 
 - [Project Description](#project-description)
