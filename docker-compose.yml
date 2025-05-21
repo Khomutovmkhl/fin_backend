@@ -1,0 +1,25 @@
+version: '3.7'
+services:
+  mysql_db:
+    image: mysql:latest
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_general_ci
+    environment:
+      MYSQL_DATABASE: fin
+      MYSQL_USER: fin
+      MYSQL_PASSWORD: fin
+      MYSQL_ROOT_PASSWORD: 123456
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql_db_data:/var/lib/mysql
+  adminer:
+    image: adminer:latest
+    environment:
+      ADMINER_DESIGN: pepa-linha
+    ports:
+      - 4200:8080
+
+volumes:
+  mysql_db_data:
